@@ -1,0 +1,94 @@
+/*Navbar*/
+nav {
+    background-color: #e0dddd;
+    padding: 15px;
+  }
+nav a {
+    color: black;
+    background-color: #c3c2c2;
+    transition: background-color 0.3s;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+nav a:hover {
+    background-color: white;
+  }
+#signup{
+    float: right;
+    margin-top: -10px;
+  }
+#login{
+    float: right;
+    margin-top: -10px;
+}
+#update{
+    float: right;
+    margin-top: -10px;
+}
+/*Body*/
+#body{
+    text-align: center;
+}
+#body a{
+    color: black;
+    background-color: #c3c2c2;
+    transition: background-color 0.3s;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#body a:hover{
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+#parent{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+.child{
+    flex: 1;
+}
+li{
+    margin-bottom: 10px;
+}
+#child1{
+    background-color: #dddbdb;
+}
+#child2{
+    background-color: #E6E6E6;
+}
+#header1{
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    margin-left: 20px;
+}
+#results{
+    margin-left: 20px;
+}
+#publisherInput{
+    width: 210px;
+}
+#patternInput{
+    width: 210px;
+}
+#text{
+  text-align: center;
+}
+.admin{
+    background-color: #E6E6E6;
+}
+#mainbody{
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Page Title</title>
+</head>
+<body>
+    <nav>
+        <a href="/userHome">Home</a>
+        <a href="/signUp" id="signup">SignUp</a>
+        <a href="/login" id="login">Login</a>
+        <a href="/updatePassword" id="update">Update Password</a>
+    </nav>
+    <div id="mainbody"></div>
+    <!-- Public Lists -->
+    <div id="child">
+        <h2>Public Lists</h2>
+        <div id="publicResults"></div>
+    </div>
+    <!-- My Lists -->
+    <div class="child" hidden>
+        <h2>My Lists</h2>
+        <div id="myResults"></div>
+    </div>
+    <!-- Create Lists -->
+    <div class="child" hidden>
+      <h2>Create List</h2>
+      <form id="createList" (submit)="submitForm($event,'createList')">
+        <label>Name:</label>
+        <input type="text" id="createListName" placeholder="Enter list name" required maxlength="15">
+        <label>Set Description:</label>
+        <textarea id="createListDescription" rows="1" placeholder="Enter description" maxlength="30"></textarea>
+        <label>Set Heros:</label>
+        <input type="text" id="createListHeros" placeholder="Enter hero names" required>
+        <label>Set Visibility:</label>
+        <select id="createListVisibility">
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+        <button id="createListButton" (click)="create()">Create</button>
+      </form> 
+    </div>
+    <!-- Edit list -->
+    <div class="child" hidden>
+      <h2>Edit List</h2>
+      <form id="editList" (submit)="submitForm($event,'editList')">
+        <label>Name:</label>
+        <input type="text" id="editListName" placeholder="Enter list name" maxlength="15">
+        <label>Set Name:</label>
+        <input type="text" id="editListSetName" placeholder="Enter new name" maxlength="15">
+        <label>Set Description:</label>
+        <textarea id="editListSetDescription" rows="1" placeholder="Enter description" maxlength="30"></textarea>
+        <label>Set Heros:</label>
+        <input type="text" id="editListSetHeros" placeholder="Enter hero names">
+        <label>Set Visibility:</label>
+        <select id="editListSetVisibility">
+          <option value=""></option>
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+        <button id="editListButton" (click)="edit()">Update</button>
+      </form>
+    </div>
+    <!-- Delete Lists -->
+    <div class="child" hidden>
+        <h2>Delete a List</h2>
+        <form id="deleteList" (submit)="submitForm($event,'deleteList')">
+          <label>Name:</label>
+          <input type="text" id="deleteListName" placeholder="Enter list name" maxlength="15" required>
+          <label>Confirm:</label>
+          <input type="text" id="confirm" placeholder="Yes/No" maxlength="3" required>
+          <button id="deleteListButton" (click)="delete()">Delete</button>
+        </form>
+    </div>
+    <!-- Leave a Review -->
+    <div class="child" hidden>
+        <h2>Leave a Review</h2>
+        <form id="reviewList" (submit)="submitForm($event,'reviewList')">
+          <label>Name:</label>
+          <input type="text" id="reviewName" placeholder="Enter list name" required maxlength="15">
+          <label>Rating:</label>
+          <input type="text" id="reviewRating" placeholder="Enter rating(0-5)" required maxlength="1" pattern="[0-5]">
+          <label>Comment:</label>
+          <input type="text" id="reviewComment" placeholder="Enter comment" maxlength="20">
+          <label>Confirm:</label>
+          <input type="text" id="confirmReview" placeholder="Yes/No" maxlength="15" required>
+          <button id="reviewButton" (click)="review()">Submit</button>
+        </form>
+    </div>
+    <!--Hide Review-->
+    <div class="admin" hidden>
+      <form id="hideReview" (submit)="submitForm($event,'hideReview')">
+        <h2>Hide/Show Review</h2>
+        <label>Creator Nickname:</label>
+        <input type="text" id="hideReviewCreatorNickname" placeholder="Enter creator nickname" maxlength="15">
+        <label>List Name:</label>
+        <input type="text" id="hideReviewListname" placeholder="Enter list name" maxlength="15">
+        <label>Review Number:</label>
+        <input type="text" id="hideReviewReviewNumber" placeholder="Enter review number" maxlength="1" pattern="[0-100]">
+        <label>Action:</label>
+        <select id="hideReviewAction">
+          <option value="hide">hide</option>
+          <option value="show">show</option>
+        </select>
+        <button id="hideReviewButton" (click) = "hideReview()">Update</button>
+      </form>
+  </div>
+</body>
+</html>

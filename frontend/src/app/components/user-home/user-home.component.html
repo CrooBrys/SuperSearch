@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+      <div id="nav">
+        <a href="/userHome">Home</a>
+        <a href="/publicLists">Lists</a>
+        <a href="/signUp" id="signup">SignUp</a>
+        <a href="/login" id="login">Login</a>
+        <a href="/updatePassword" id="update">Update Password</a>
+      </div>
+    </nav>
+    <!--Body-->
+    <div>
+        <div id="mainbody"></div>
+        <h1 id = "header1">My Superhero Server</h1>
+        <p id="text">This website allows you to easily find superheroes by applying different search criteria. You can also create and share lists of superheroes with the public (if signed in).</p>
+        <div id="body"><a href="/securityPrivacy">Security & Privacy</a>
+            <a href="/acceptableUsePolicy">Acceptable Use Policy</a>
+            <a href="/DMCANoticeTakedownPolicy">DMCA Notice & Takedown Policy</a>
+        </div>
+        <!--Hero Search-->
+        <div id = "parent">
+            <div class = "child" id = "child1">
+                <h2>Search</h2>
+                <ul>
+                    <li>
+                        <label>Search by Name:</label>
+                        <input type="text" id="nameInput" placeholder="Enter Name" maxlength="20">
+                    </li>
+                    <li>
+                        <label>Search by Race:</label>
+                        <input type="text" id="raceInput" placeholder="Enter Race" maxlength="20">
+                    </li>
+                    <li>
+                        <label>Search by Superpower:</label>
+                        <input type="text" id="powerInput" placeholder="Enter Superpower" maxlength="20">
+                    </li>
+                    <li>
+                        <label>Search by Publisher:</label>
+                        <input type="text" id="publisherInput" placeholder="Enter Publisher" maxlength="20">
+                    </li>
+                    <button (click)="search()">Search</button>
+                </ul>
+            </div>
+            <div class = "child" id = "child2">
+                <h2>Results</h2>
+                <div id="results">
+                </div>
+            </div>
+        </div>
+        <!--Grant Admin-->
+        <div class="admin" hidden>
+            <h2>Grant Admin</h2>
+            <label>Nickname:</label>
+            <input type="text" id="grantAdminNickname" placeholder="Enter nickname">
+            <button id="grantAdminButton" (click)="grantAdmin()">Grant Admin</button>
+        </div>
+        <!--Disable User-->
+        <div class="admin" hidden>
+            <h2>Disable/Enable User</h2>
+            <label>Nickname</label>
+            <input type="text" id="disableUserName" placeholder="Enter nickname">
+            <label>Action:</label>
+            <select id="disableUserAction">
+                <option value="disable">disable</option>
+                <option value="enable">enable</option>
+            </select>
+            <button id="disableUserButton" (click)="diableUser()">Update</button>
+        </div>
+    </div>
+  </body>
+</html>

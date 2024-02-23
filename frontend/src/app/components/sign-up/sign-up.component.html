@@ -1,0 +1,37 @@
+<!--page info-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+      <div>
+        <a href="/userHome">Home</a>
+        <a href="/publicLists">Lists</a>
+        <a href="/login" id="login">Login</a>
+      </div>
+    </nav>
+    <!--sign-up-->
+    <div class="box">
+      <h2>Sign Up</h2>
+      <form id="signUp" (submit)="submitForm($event)">
+        <label>Email:</label>
+        <input type="text" id="email" name="email" required maxlength="20">
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required maxlength="20">
+        <label>Nickname:</label>
+        <input type="text" id="username" name="username" required maxlength="15">
+        <button (click)="signUp()">Sign Up</button>
+      </form>
+    </div>
+    <!--link-->
+    <div id="linkpaste" hidden>
+      <h2>Email Verification:</h2>
+      <div id="link">
+      </div>
+    </div>
+  </body>
+</html>

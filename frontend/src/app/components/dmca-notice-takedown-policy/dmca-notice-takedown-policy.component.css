@@ -1,0 +1,33 @@
+/*Navbar*/
+nav {
+    background-color: #e0dddd;
+    padding: 15px;
+  }
+nav a {
+    color: black;
+    background-color: #c3c2c2;
+    transition: background-color 0.3s;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+nav a:hover {
+    background-color: white;
+  }
+#signup{
+    float: right;
+    margin-top: -10px;
+  }
+#login{
+    float: right;
+    margin-top: -10px;
+}
+#update{
+  float: right;
+  margin-top: -10px;
+}
+/*Body*/
+body{
+    text-align: center;
+}

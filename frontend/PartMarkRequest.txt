@@ -1,0 +1,23 @@
+    Listed below I have stated which test items fail and the impact that they will have
+    on the functionality of that item and the site.
+
+>   Test item 7.a.i fails. Due to this failure, the admin of the site will not be able to create the 
+    security and privacy policy themselves. This however will not impact any other functionality of the site.
+>   Test item 7.a.ii fails. Due to this failure, the admin of the site will not be able to update the
+    security and privacy policy. This however will not impact any other functionality of the site.
+
+>   Test item 7.b.i fails. Due to this failure, the admin of the site will not be able to create the 
+    DMCA notice & takedown policy themselves. This however will not impact any other functionality of the site.
+>   Test item 7.b.ii fails. Due to this failure, the admin of the site will not be able to update the
+    DMCA notice & takedown policy. This however will not impact any other functionality of the site.
+
+>   Test item 7.c.i fails. Due to this failure, the admin of the site will not be able to create the 
+    acceptable use policy themselves. This however will not impact any other functionality of the site.
+>   Test item 7.c.ii fails. Due to this failure, the admin of the site will not be able to update the
+    acceptable use policy. This however will not impact any other functionality of the site.
+
+>   Test item 7.d fails. Due to this failure, some actions are not possible. The admin of the site will not
+    be able to view a document describing the workflow and usage of tools. Users will not be able to log
+    requests, notices, and disputes. The admin will not be able to disable display of reviews with alleged
+    copyright violations, unless by using task 5.c. The admin will not be able to restore any contested content,
+    unless by using task 5.c. This failure however will not impact any other functionality of the site.
